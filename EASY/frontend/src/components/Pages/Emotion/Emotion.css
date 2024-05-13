@@ -1,0 +1,72 @@
+/* The main container with a more attractive gradient background */
+.emotion-detection {
+  background: linear-gradient(to bottom, #ffffff, #e0e7ff); /* Gradient from white to light blue */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Flex layout for alignment */
+  flex-direction: column; /* Vertical layout */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center content horizontally */
+  position: relative; /* For absolute positioning */
+  padding: 20px; /* Padding around the container */
+}
+
+/* Box style with a more vibrant gradient and improved padding */
+.gradient-box {
+  display: flex; /* Flex layout for alignment */
+  align-items: center; /* Vertical alignment to center */
+  justify-content: flex-start; /* Align content to the left */
+  padding: 15px; /* Increased padding for more space */
+  background: linear-gradient(to right, rgba(14, 10, 101, 0.7), rgba(111, 118, 186, 0.9)); /* Improved gradient with more opacity */
+  border-radius: 15px; /* Rounded corners */
+  color: #ffffff; /* White text for contrast */
+  margin: 10px 0; /* Margin between boxes */
+  font-size: 24px; /* Font size for easy reading */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Additional styling for gradient-box on hover for interactive feedback */
+.gradient-box:hover {
+  transform: scale(1.03); /* Slight scale effect on hover */
+  background: linear-gradient(to right, rgba(14, 10, 101, 0.8), rgba(111, 118, 186, 1)); /* Darker gradient on hover */
+}
+
+/* Aligns the box wrapper for proper spacing and layout */
+.content {
+  max-width: 92%; /* Limiting width */
+  text-align: left; /* Aligns text to the left */
+  flex-grow: 1; /* Allows content to grow vertically */
+}
+
+/* Styling for detailed text inside content */
+.contentdetailss {
+  color: #000000; /* Dark gray for readability */
+  font-size: 18px; /* Standard font size */
+}
+
+/* Absolute position for the bottom right button with updated styling */
+.button-wrapper {
+  position: absolute; /* Absolute position for exact placement */
+  bottom: 20px; /* Position at the bottom */
+  right: 20px; /* Position at the right */
+}
+
+/* Styling for the center button with better colors and transitions */
+.center-button {
+  padding: 12px 30px; /* Increased padding */
+  background: linear-gradient(to right, #4d4a92, #120c80); /* Gradient background for the button */
+  color: rgb(255, 255, 255); /* White text for contrast */
+  border: none; /* No border */
+  border-radius: 10px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 20px; /* Standard font size */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+
+}
+
+/* Hover effect for the center button */
+.centerbutton:hover {
+  transform: scale(1.1); /* Larger scale effect on hover */
+  background: linear-gradient(to right, #302d3d, #8282a1); /* Darker gradient on hover */
+}

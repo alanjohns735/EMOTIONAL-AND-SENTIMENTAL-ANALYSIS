@@ -1,0 +1,184 @@
+/* Styling for the main container */
+.containerss {
+  max-width: 800px; /* Increased width for more space */
+  margin: 30px auto; /* More space between the container and the window edges */
+  padding: 40px; /* Extra padding for a comfortable look */
+  background-color: #f0f4f8; /* Light gray-blue background for a professional look */
+  border-radius: 15px; /* Rounded corners for a modern appearance */
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Styling for the questions and general layout */
+.question {
+  padding: 20px; /* Padding between questions */
+  margin-bottom: 20px; /* Extra space below each question */
+  background-color: white; /* White background for the question block */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/* Circle button wrapper with enhanced spacing */
+.circle-button-wrapper {
+  display: flex;
+  justify-content: space-around; /* Even distribution of buttons */
+  align-items: center;
+  padding: 10px; /* Padding between buttons */
+}
+
+/* Style for each individual button with enhanced gradients and effects */
+.circle-button {
+  /* border: 2px solid #2a9d8f; Green border */
+  border-radius: 50%; /* Circular shape */
+  background-color: transparent; /* Transparent background */
+  /* color: #2a9d8f; Matching text and border color */
+  cursor: pointer; /* Pointer cursor for interactivity */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  text-align: center; /* Centered text */
+}
+/* Border colors for buttons */
+.purple-border {
+  border-color: purple;
+  border: 2px solid purple;/* Purple border for 1-3 */
+}
+
+.green-border {
+  border-color: green;
+  border: 2px solid #2a9d8f; /* Green border for 5-7 */
+}
+
+.grey-border {
+  border-color: grey; /* Grey border for 4 */
+  border: 2px solid grey;
+}
+
+.purple-border:hover {
+  border-color: purple; /* Slightly darker border on hover */
+  background-color: purple;
+  color: white; /* Subtle hover effect */
+}
+
+.green-border:hover {
+  border-color: #21867e; /* Slightly darker border on hover */
+  background-color: #21867e ;
+  color: white; /* Subtle hover effect */
+}
+
+.grey-border:hover {
+  border-color: grey; /* Grey border for 4 */
+  background-color: grey;
+  color: white; /* Subtle hover effect */
+}
+
+
+.circle-button:active {
+  background-color: rgba(42, 157, 143, 0.2); /* Darker background on click */
+} 
+
+/* Style for selected buttons */
+/* .circle-button.selected {
+  background-color: #2a9d8f; /* Green when selected */
+  /* color: white; White text for contrast */
+/* } */ 
+
+.green-border.selected {
+  background-color: #2a9d8f; /* Green when selected */
+  color: white; /* White text for contrast */
+}
+
+.grey-border.selected {
+  background-color: grey; /* Green when selected */
+  color: white; /* White text for contrast */
+}
+.purple-border.selected {
+  background-color: purple; /* Green when selected */
+  color: white; /* White text for contrast */
+}
+/* Spacing between gradient buttons */
+.circle-button + .circle-button {
+  margin-left: 10px; /* Space between buttons */
+}
+
+/* Styling for the submit button with hover and active effects */
+.submit-btn {
+  background-color: #2a9d8f; /* Matching color */
+  color: white; /* White text for contrast */
+  border: none; /* No border */
+  padding: 12px 25px; /* Padding for a comfortable click area */
+  border-radius: 8px; /* Rounded edges */
+  font-size: 16px; /* Reasonable font size */
+  font-weight: bold; /* Bold text for emphasis */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow */
+ 
+}
+
+/* Hover and active effects for the submit button */
+.submit-btn:hover {
+  background-color: #21867e; /* Darker shade on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+}
+
+.submit-btn:active {
+  background-color: #1c746a; /* Darker shade when pressed */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Reduced shadow on click */
+}
+
+/* Styling for the result text */
+.result {
+  text-align: center; /* Centered alignment */
+  font-size: 20px; /* Slightly larger font */
+  color: #333; /* Dark gray color for contrast */
+  padding: 40px; /* Padding around text */
+  background-color: white; /* White background */
+  border-radius: 10px; /* Rounded corners */
+  border: 1px solid #ddd; /* Light gray border */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.circle-button:nth-child(1), .circle-button:nth-child(7) {
+  width: 60px; /* Largest size */
+  height: 60px;
+}
+
+.circle-button:nth-child(2), .circle-button:nth-child(6) {
+  width: 50px; /* Medium size */
+  height: 50px;
+}
+
+.circle-button:nth-child(3), .circle-button:nth-child(5) {
+  width: 40px; /* Smaller size */
+  height: 40px;
+}
+
+.circle-button:nth-child(4) {
+  width: 30px; /* Smallest size */
+  height: 30px;
+}
+
+.test {
+  position: fixed; /* Ensures the element stays fixed even when scrolling */
+  bottom: 20px; /* 20px from the bottom edge */
+  right: 20px; /* 20px from the right edge */
+  padding: 12px 24px; /* Padding for comfortable click area */
+  background-color: #20104e; /* Professional dark blue background */
+  color: rgb(255, 255, 255); /* White text for contrast */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+  font-size: 16px; /* Standard font size */
+  font-weight: 600; /* Slightly bolder text for readability */
+  font-family: 'Arial', sans-serif; /* Professional, clean font family */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for the 'test' class */
+.test:hover {
+  background-color: #1C3A63; /* Darker shade of blue on hover */
+  transform: scale(1.05); /* Slightly larger when hovered */
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+}

@@ -1,0 +1,85 @@
+.mood-story {
+  padding: 55px; /* Padding around the container */
+  text-align: center; /* Center-align text */
+  background: url('../Assets/forest.jpg');/* Correct image path */
+  background-size: cover; /* Ensures the image covers the entire area */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative; /* Allows for absolute positioning of overlays */
+  color: rgb(255, 251, 251); /* White text for contrast against dark background */
+  min-height: 100vh; /* Ensures the background covers the entire viewport */
+  font-family: 'Roboto', sans-serif; /* Clear, readable font */
+}
+
+.story {
+  text-align: left; /* Align text to the left */
+  padding: 20px; /* Padding within the story */
+  background: rgba(0, 0, 0, 0.6); /* Semi-transparent background for text readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  position: relative; /* Relative positioning for proper overlay */
+  margin: 20px; /* Margin for spacing */
+}
+
+.choices {
+  display: flex; /* Flex layout */
+  flex-direction: column; /* Vertical alignment */
+  gap: 15px; /* More space between choices */
+  padding: 10px; /* Additional padding */
+}
+
+.choice-button {
+  padding: 10px 20px; /* Comfortable padding */
+  background-color: #4CAF50; /* Green background */
+  color: rgb(255, 255, 255); /* White text for contrast */
+  border-radius: 8px; /* Rounded corners */
+  border: none; /* No border */
+  cursor: pointer; /* Pointer cursor */
+  transition: all 0.3s ease; /* Smooth transitions */
+  font-weight: bold; /* Make the text bolder for emphasis */
+}
+
+.choice-button:hover {
+  background-color: #388E3C; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly increased scale on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover for emphasis */
+}
+
+.results {
+  padding: 20px; /* Padding within results */
+  text-align: left; /* Left-align text */
+  border-top: 1px solid #ddd; /* Light border for separation */
+  margin-top: 20px; /* Space between the story and results */
+  background: rgba(255, 255, 255, 0.6); /* Semi-transparent background for readability */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  font-size: 1.1em; /* Slightly larger font size for better readability */
+  color: black;
+}
+
+.story-title {
+  color: black; /* Set the color to black */
+  font-size: 2em; /* Example font size for emphasis */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+.next {
+  position: absolute; /* Allow absolute positioning */
+  bottom: 20px; /* Distance from the bottom edge */
+  right: 20px; /* Distance from the right edge */
+  padding: 10px 20px; /* Padding for the button */
+  background-color: #4CAF50; /* Button background color */
+  color: white; /* Button text color */
+  border: none; /* No border */
+  border-radius: 50%; /* Rounded corners (circular button) */
+  font-size: 16px; /* Button text size */
+  cursor: pointer; /* Pointer cursor */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+  transition: all 0.3s ease; /* Smooth transition for interactions */
+}
+
+.next:hover {
+  background-color: #388E3C; /* Darker shade on hover */
+  transform: scale(1.1); /* Slightly larger on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4); /* Increase shadow on hover */
+}

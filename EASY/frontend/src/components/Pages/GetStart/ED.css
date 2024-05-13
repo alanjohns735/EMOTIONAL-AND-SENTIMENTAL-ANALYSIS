@@ -1,0 +1,124 @@
+/* Base styles for the container with 3D background effect */
+.emotion-detection-container {
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* To prevent overflow from animations */
+  position: relative; /* Position for pseudo-elements */
+  padding: 20px; /* Add padding for smaller screens */
+}
+
+@keyframes move-background {
+  0% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(30deg) rotateY(-5deg);
+  }
+  15% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(60deg) rotateY(-5deg);
+  }
+  30% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(60deg) rotateY(-5deg);
+  }
+  45% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(60deg) rotateY(-5deg);
+  }
+  60% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(60deg) rotateY(-5deg);
+  }
+  75% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(60deg) rotateY(-5deg);
+  }
+  90% {
+    transform: translateX(-10%) translateY(10%) scale(1) rotateX(30deg) rotateY(-5deg);
+  }
+  100% {
+    transform: translateX(10%) translateY(-5%) scale(1.05) rotateX(40deg) rotateY(-15deg);
+  }
+}
+
+
+/* Layout structure and positioning */
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Ensures the image is on the left */
+  color: rgb(255, 251, 251);
+  padding: 20px;
+  max-width: 90%;
+  width: 100%;
+  font-size: 30px;
+}
+
+/* Adding a 3D animation using a pseudo-element */
+.emotion-detection-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, #360931, #040a30, #673f5d, #586757, #030b3b);
+  background-size: 400% 400%; /* Increase the size to enable the animation */
+  z-index: -1; /* Place it behind the content */
+  animation: move-background 15s linear infinite; /* Infinite animation for continuous movement */
+  transform: perspective(1000px) rotateX(10deg) rotateY(-10deg); /* Adding a 3D perspective */
+}
+
+
+
+/* Responsive content with image on the left and text on the right */
+.content {
+  display: flex;
+  flex-direction: row; /* Ensure horizontal layout */
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  
+}
+
+/* Styles for the image */
+.content img {
+  flex: 1; /* The image takes less space than text */
+  max-width: 84%; /* Reduce the maximum width */
+  height: auto;
+  margin-right: 30px; /* Margin between image and text */
+}
+
+/* Styles for the text section */
+.content > div {
+  flex: 2; /* The text section takes more space */
+}
+
+/* Heading styles */
+.content-details h1 {
+  font-size: 40px;
+  padding-bottom: 18px;
+ 
+}
+
+/* Styles for buttons */
+.center-button {
+  padding: 12px 24px;
+  background-color: #575b71;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  text-align: center;
+  transition: all 0.3s ease;
+  background: linear-gradient(to right, rgba(119, 133, 184, 0.7), rgba(7, 36, 42, 0.796)); /* Transparent gradient */
+}
+
+.center-button:hover {
+  color: rgb(211, 235, 235);
+  background-color: #121212;
+  transform: scale(1.05);
+}
+
+.buttons-container {
+  display: flex;
+  flex-direction: column; /* Vertical arrangement of buttons */
+  gap: 10px; /* Space between buttons */
+}

@@ -1,0 +1,89 @@
+{
+  "Header": {
+    "title": "Feel Easy",
+    "paragraph": "Learn how people express feelings online using text, speech, and images. We'll talk about language, culture, and being fair and private."
+  },
+  "About": {
+    "paragraph": "We excel in understanding how people express emotions online through text, speech, and visuals, while navigating language nuances, cultural differences, and ethical concerns for thorough sentiment analysis.",
+    "Why": [
+       "Comprehensive Approach",
+       "Expertise",
+      
+       " Customized Solutions",
+       "Ethical Practices"
+     
+    ],
+    "Why2": [
+      " Accuracy",
+       "Scalability",
+       "Real-time Monitoring",
+       "Continuous Improvement"
+      
+    ]
+  },
+  "Testimonials": [
+    {
+      "img": "img/testimonials/01.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/02.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/03.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/04.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    },
+    {
+      "img": "img/testimonials/05.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "John Doe"
+    },
+    {
+      "img": "img/testimonials/06.jpg",
+      "text": "\"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sed dapibus leo nec ornare diam sedasd commodo nibh ante facilisis bibendum dolor feugiat at.\"",
+      "name": "Johnathan Doe"
+    }
+  ],
+  "Contact": {
+    "address": "4321 Kallooppara College, CSE, CS 2024 ",
+    "phone": "+91 12345 61234",
+    "email": "easy@company.com",
+    "facebook": "fb.com",
+    "twitter": "twitter.com",
+    "youtube": "youtube.com"
+  },
+  "Features": [
+    {
+      "icon": "fa fa-comments-o",
+      "title": "Text Analysis",
+      "text": "Examining written content to identify emotional cues, sentiment polarity (positive, negative, or neutral), and emotional intensity."
+
+    },
+    {
+      "icon": "fa fa-bullhorn",
+      "title": "Speech Analysis",
+      "text": "Analyzing spoken language to detect emotions through tone, pitch, and other vocal characteristics."
+    },
+    {
+
+      "icon": "fa fa-group",
+      "title": "Visual Analysis",
+      "text": " Assessing emotions conveyed in images or videos through facial expressions, body language, and contextual elements."
+      
+    },
+    {
+      "icon": "fa fa-magic",
+      "title": "Ethical Concerns",
+      "text": "Addressing privacy, bias, and fairness to uphold ethical standards in emotion and sentiment analysis."
+    }
+  ]
+}
