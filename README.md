@@ -1,4 +1,3 @@
-Thanks for providing the detailed installation instructions! Here's how you can incorporate them into the README:
 
 ```markdown
 # Emotional and Sentimental Analysis
